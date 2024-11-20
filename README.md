@@ -17,7 +17,7 @@ npm i -g conventional-changelog-cli
 Then, install this module.
 
 ```bash
-npm i -g conventional-changelog-conventionalcommits-helm
+npm i -g @dslab/conventional-changelog-conventionalcommits-helm
 ```
 
 ## Usage (as preset)

@@ -1,5 +1,5 @@
 {
-    "name": "conventional-changelog-conventionalcommits-helm",
+    "name": "@dslab/conventional-changelog-conventionalcommits-helm",
     "type": "module",
     "version": "1.0.0",
     "description": "Conventionalcommits.org preset for conventional-changelog.",
