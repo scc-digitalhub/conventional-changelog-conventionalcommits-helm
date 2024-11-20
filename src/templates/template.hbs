@@ -1,0 +1,75 @@
+{{> header}}
+{{#if noteGroups}}
+{{#each noteGroups}}
+
+### ⚠ {{title}}
+
+{{#each notes}}
+* {{#if commit.scope}}**{{commit.scope}}:** {{/if}}{{text}}
+{{/each}}
+{{/each}}
+{{/if}}
+{{#each commitGroups}}
+{{#if title}}## {{title}}{{/if}}
+{{#if bump}}### New version :tada:
+{{#each bump}}
+* {{subject}} ([Check the commit :point_right:]({{repo}}/commit/{{hash}}))
+{{/each}}
+{{/if}}
+{{#if features}}### Features :rocket:
+{{#each features}}
+* {{subject}} ([Check the commit :point_right:]({{repo}}/commit/{{hash}}))
+{{/each}}
+{{/if}}
+{{#if bugFixes}}### Bug Fixes :hammer:
+{{#each bugFixes}}
+* {{subject}} ([Check the commit :point_right:]({{repo}}/commit/{{hash}}))
+{{/each}}
+{{/if}}
+{{#if perf}}### Performance Improvements :chart_with_upwards_trend:
+{{#each perf}}
+* {{subject}} ([Check the commit :point_right:]({{repo}}/commit/{{hash}}))
+{{/each}}
+{{/if}}
+{{#if revert}}### Reverts :rewind:
+{{#each revert}}
+* {{subject}} ([Check the commit :point_right:]({{repo}}/commit/{{hash}}))
+{{/each}}
+{{/if}}
+{{#if docs}}### Documentation :books:
+{{#each docs}}
+* {{subject}} ([Check the commit :point_right:]({{repo}}/commit/{{hash}}))
+{{/each}}
+{{/if}}
+{{#if style}}### Styles :sparkles:
+{{#each style}}
+* {{subject}} ([Check the commit :point_right:]({{repo}}/commit/{{hash}}))
+{{/each}}
+{{/if}}
+{{#if chore}}### Miscellaneous Chores :cyclone:
+{{#each chore}}
+* {{subject}} ([Check the commit :point_right:]({{repo}}/commit/{{hash}}))
+{{/each}}
+{{/if}}
+{{#if refactor}}### Code Refactoring :pencil:
+{{#each refactor}}
+* {{subject}} ([Check the commit :point_right:]({{repo}}/commit/{{hash}}))
+{{/each}}
+{{/if}}
+{{#if test}}### Tests :bomb:
+{{#each test}}
+* {{subject}} ([Check the commit :point_right:]({{repo}}/commit/{{hash}}))
+{{/each}}
+{{/if}}
+{{#if build}}### Build System :nut_and_bolt:
+{{#each build}}
+* {{subject}} ([Check the commit :point_right:]({{repo}}/commit/{{hash}}))
+{{/each}}
+{{/if}}
+{{#if ci}}### Continuous Integration :recycle:
+{{#each ci}}
+* {{subject}} ([Check the commit :point_right:]({{repo}}/commit/{{hash}}))
+{{/each}}
+{{/if}}
+{{/each}}
+

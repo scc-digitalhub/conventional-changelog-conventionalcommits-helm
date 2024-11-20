@@ -1,0 +1,36 @@
+{
+    "name": "conventional-changelog-conventionalcommits-helm",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "Conventionalcommits.org preset for conventional-changelog.",
+    "author": "Jacopo Cristofori",
+    "license": "ISC",
+    "homepage": "https://github.com/scc-digitalhub/conventional-changelog-conventionalcommits-helm#readme",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/scc-digitalhub/conventional-changelog-conventionalcommits-helm"
+    },
+    "bugs": {
+      "url": "https://github.com/scc-digitalhub/conventional-changelog-conventionalcommits-helm/issues"
+    },
+    "keywords": [
+      "conventional-changelog",
+      "conventionalcommits.org",
+      "preset",
+      "conventional-changelog-helm"
+    ],
+    "engines": {
+      "node": ">=18"
+    },
+    "exports": "./src/index.js",
+    "publishConfig": {
+      "directory": "package",
+      "linkDirectory": false
+    },
+    "files": [
+      "src"
+    ],
+    "dependencies": {
+      "compare-func": "^2.0.0"
+    }
+  }
