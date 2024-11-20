@@ -11,13 +11,13 @@ The main difference is that the commits are now sorted by scope and then sorted 
 First, install the [conventional-changelog-cli](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli). (Refer to this repo for documentation on the cli)
 
 ```bash
-npm i conventional-changelog-cli
+npm i -g conventional-changelog-cli
 ```
 
 Then, install this module.
 
 ```bash
-npm i conventional-changelog-conventionalcommits-helm
+npm i -g conventional-changelog-conventionalcommits-helm
 ```
 
 ## Usage (as preset)
